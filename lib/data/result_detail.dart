@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:covid_data/page/check_covid.dart';
+import 'package:covid_data/Screens/check_covid.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable

@@ -1,7 +1,6 @@
 
-import 'package:covid_data/page/check_covid.dart';
-import 'package:covid_data/page/cont_med.dart';
-import 'package:covid_data/result/result_detail.dart';
+
+import 'package:covid_data/Screens/check_covid.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 

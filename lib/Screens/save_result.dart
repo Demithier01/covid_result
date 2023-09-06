@@ -1,4 +1,5 @@
-import 'package:covid_data/page/check_covid.dart';
+
+import 'package:covid_data/Screens/check_covid.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 

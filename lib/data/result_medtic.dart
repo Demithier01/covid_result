@@ -1,7 +1,6 @@
-import 'package:covid_data/result/medtic.dart';
-import 'package:flutter/material.dart';
 
-import '../page/cont_med.dart';
+import 'package:covid_data/Screens/cont_med.dart';
+import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Medtic extends StatefulWidget {
