@@ -6,28 +6,30 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class Detail extends StatefulWidget {
   // Detail({super.key});
-  String args;
+  String date;
   String time;
   String number;
   String temp;
-  // ProducTypeEnum? button;
   String type;
+  // ProducTypeEnum? button;
+ 
 
-  Detail(this.args, this.time, this.number, this.temp,this.type, {super.key});
+  Detail(this.date, this.time, this.number, this.temp,this.type, {super.key});
 
   @override
   // ignore: no_logic_in_create_state
-  State<Detail> createState() => _DetailState(args, time, number, temp,type);
+  State<Detail> createState() => _DetailState(date, time, number, temp,type);
 }
 
 class _DetailState extends State<Detail> {
-  String args;
+  String date;
   String time;
   String number;
   String temp;
-  // ProducTypeEnum button;
   String type;
-  _DetailState(this.args, this.time, this.number, this.temp,this.type);
+  // ProducTypeEnum button;
+ 
+  _DetailState(this.date, this.time, this.number, this.temp,this.type);
   @override
   Widget build(BuildContext context) {
     // Object? datein = ModalRoute.of(context)?.settings.arguments;
@@ -50,7 +52,7 @@ class _DetailState extends State<Detail> {
                 alignment: Alignment.topLeft,
                 color: Colors.amber[100],
                 child:
-                    Text("วัน/เดือน/ปี: $args " ,style: TextStyle(fontSize: 16)),
+                    Text("วัน/เดือน/ปี: $date " ,style: TextStyle(fontSize: 16)),
               ),
               Container(
                 margin: EdgeInsets.all(10),

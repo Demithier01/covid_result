@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 import '../page/cont_med.dart';
 
+// ignore: must_be_immutable
 class Medtic extends StatefulWidget {
-   // Detail({super.key});
+
   String fristname;
   String lastname;
   String date;
@@ -12,7 +13,8 @@ class Medtic extends StatefulWidget {
   
   Medtic( this.fristname, this.lastname,this.date ,this.selectedTime,{super.key});
   @override
-  State<Medtic> createState() => _MedticState(fristname, lastname ,date, selectedTime);
+  // ignore: no_logic_in_create_state
+  State<Medtic> createState() => _MedticState(fristname, lastname , date, selectedTime);
 }
 
 class _MedticState extends State<Medtic> {
@@ -20,6 +22,7 @@ class _MedticState extends State<Medtic> {
   String lastname;
   String date;
   String selectedTime;
+
   _MedticState(this.fristname, this.lastname, this.date,this.selectedTime);
   @override
   Widget build(BuildContext context) {
@@ -72,7 +75,7 @@ class _MedticState extends State<Medtic> {
           highlightElevation: 40,
           elevation: 12,
           tooltip: 'เพิ่ม',
-          child: Icon(Icons.add_box_outlined,color: Color.fromARGB(255, 77, 75, 75),),
+          child: Icon(Icons.add_box_outlined,color: Colors.grey[700],),
           onPressed: () {
             Navigator.push(
                 context,

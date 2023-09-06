@@ -46,7 +46,8 @@ class _MemoState extends State<Memo> {
                 body: SingleChildScrollView(
                     child: Form(
                         key: memoKey,
-                        child: Column(children: [
+                        child: Column(
+                          children: [
                           const SizedBox(height: 20),
                           Container(
                               margin: const EdgeInsets.only(
@@ -269,14 +270,14 @@ class _MemoState extends State<Memo> {
                                     AnimatedButton(
                                         text: 'บันทึก',
                                         color: Colors.green,
-                                        pressEvent: () async {
+                                        pressEvent: ()  {
                                           if (memoKey.currentState!
                                               .validate())  {
-                                            if (type == null) {
+                                            if (type.isEmpty) {
                                               // กรณีผลตรวจไม่ถูกเลือก
                                               AwesomeDialog(
                                                 context: context,
-                                                dialogType: DialogType.error,
+                                                dialogType: DialogType.warning,
                                                 title: 'ผลตรวจไม่ถูกเลือก',
                                                 desc: 'กรุณาเลือกผลตรวจ',
                                                 btnOkOnPress: () {},
@@ -298,7 +299,6 @@ class _MemoState extends State<Memo> {
                                                     MaterialPageRoute(
                                                       builder: (context) =>
                                                           Detail(
-                                                            
                                                         dateinput.text,
                                                         timeinput.text,
                                                         numberinput.text,
